@@ -1,0 +1,42 @@
+<ion-header>
+  <header></header>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-card ion-item *ngFor="let denuncia of denuncias">
+      <img src="http://lorempixel.com/400/200/people/"/>
+      <ion-card-content>
+        <ion-card-title>
+          Nine Inch Nails Live
+          </ion-card-title>
+        <p>
+          The most popular industrial group ever, and largely
+          responsible for bringing the music to a mass audience.
+        </p>
+        <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>12 Likes</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="text"></ion-icon>
+            <div>4 Comments</div>
+          </button>
+        </ion-col>
+      </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+  <ion-fab bottom right >
+    <button ion-fab><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button (click)="makeVideo()" ion-fab><ion-icon name="logo-youtube"></ion-icon></button>
+      <button (click)="makeAudio()" ion-fab><ion-icon name="mic"></ion-icon></button>
+      <button (click)="makePicture()" ion-fab><ion-icon name="camera"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,5 @@
+/denunces/
+/denunces/2017/01
+/denunces/2017/02
+/user/<user_id>/denuncias
+/denunce/<denunce_id>/
